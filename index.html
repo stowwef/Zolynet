@@ -1,0 +1,144 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+<header>
+    <h1>Zolynet</h1>
+</header>
+
+<main>
+
+    <article>
+
+        <form action="" method="post">
+    
+            <label for="idioma"></label>
+            <select id="idioma" name="idioma" autofocus>
+                <option value="" disabled selected>Idioma</option>
+                <option value="en">Inglés</option>
+                <option value="es">Español</option>
+                <option value="it">Italiano</option>
+    
+            </select>
+    
+            <button type="button">Iniciar sesión</button>
+            
+        </form>
+        
+    </article>
+
+    <section>
+        <h3>Formulario para solicitar servicio:</h3>
+        
+        <p>Es obligatorio llenar los campos que tienen (*).</p>
+        
+    </section>
+
+    <section>
+
+        <h3>Información personal</h3>
+
+        <form action="registro.php" method="post">
+
+            <div>
+                <label for="nombre">Nombres (*):</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa nombre." required >
+                
+            </div>
+
+            <div>
+
+                <label for="apellido">Apellidos (*):</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingresa Apellido." required>
+                
+            </div>
+
+            <div class="orden">
+
+                <label for="sexo"> Sexo (*):</label>
+                <input type="radio" value="hombre" name="sexo" id="hombre" required> Hombre<br>
+                <input type="radio" value="mujer" name="sexo" id="mujer" required> Mujer<br>
+                <input type="radio" value="otro" name="sexo" id="otro" required checked> Otro
+                
+            </div>
+
+            <div>
+                <label for="nacimiento">Fecha de nacimiento (*): </label>
+                <input type="date" name="nacimiento" id="nacimiento" required>
+            </div>
+
+            <div>
+                <label for="provincia">Provincia (*):</label>
+                <select name="provincia" id="provincia" required>
+
+                    <option value=" " disabled selected>Ingrese provincia</option>
+                    <option value="RM">Romana</option>
+                    <option value="SD">Santo Domingo</option>
+                    <option value="HM">Hato mayor del rey</option>
+                    <option value="SPM">San Pedro de Macorís</option>
+                </select>
+            </div>
+
+            <div class="orden">
+                <label for="estado civil">Estado Civil (*):</label>
+                <input type="radio" value="Soltero" name="estado civil" id="Soltero" required checked> Soltero <br>
+                <input type="radio" value="Casado" name="estado civil" id="Casado" required > Casado  
+
+            </div>
+
+            <div>
+                <label for="cedula"> Cédula (*):</label>
+                <input type="text" name="cedula" id="cedula" placeholder="000-0000000-0" pattern="\d{3}-\d{7}-\d{1}" required>
+            </div>
+
+          <div>
+                <label for="celular">Celular (*): </label>
+                <input type="tel" name="celular" id="celular" placeholder="809-000-0000"pattern ="\d[0-9]{3}-\d[0-9]{3}-\d[0-9]{4}"required >
+            </div>
+
+            <div>
+                <label for="email">Correo (*):</label>
+                <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required>
+            </div>
+
+            <div class="orden">
+                    <label for="servicios">Servicios:</label>
+                    <input type="checkbox" name="Servicios" id="Internet Movil" value="Internet movil" required> Internet Movil<br>
+                    <input type="checkbox" name="Servicios" id="Internet Fijo" value="Internet Fijo" required> Internet Fijo<br>
+                    <input type="checkbox" name="Servicios" id="Fibra Optica"  value="Fibra Optica" required> Fibra Optica
+
+            </div>
+
+            <div>
+                <label for="archivos">Archivos: </label>
+                <input type="file" name="archivos" id="archivos" accept="image/*" multiple required>
+            </div>
+            
+
+            <div class="orden">
+                <label for="observaciones">Observaciones: </label>
+                <textarea name="observaciones" id="observaciones" rows="10" cols=50 > </textarea> 
+
+            </div>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </form>
+        
+    </section>
+    
+
+
+
+
+</main>
+
+
+</body>
+</html>

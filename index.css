@@ -1,0 +1,24 @@
+div{
+    margin-bottom: 5px;
+    padding: 10px;
+    display: block;   
+}
+
+.orden label {
+
+    display: block;
+    margin-bottom: 5.9px;
+}
+
+input[type="checkbox"] {
+
+display: inline-block;
+margin-bottom: 10px;
+
+}
+
+body{
+    background-color: #9950aa82;
+    color: #6f3e78;
+}
+
